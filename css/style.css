@@ -1,5 +1,6 @@
 body {
     margin: 0 auto;
+    font-size: 20px;
 }
 
 
@@ -7,7 +8,8 @@ body {
     margin: 0 auto;
     min-height: 925px;
     width: 1100px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    background-color: #d2d2a7;
 }
 
 header {
@@ -15,13 +17,76 @@ header {
     background-color: #9e6262;
 }
 
-/* .block { */
-    /* min-width: 100%; */
-    /* min-height: 200px; */
+.section {
+    min-width: 90%;
+    min-height: 90%;
     /* border: 1px solid black; */
-    /* display: flex; */
-/* } */
-
+    display: flex;
+    flex-direction: column;
+    }
+    
 input {
     width: 100%;
+    display: none;
+    /* appearance: none; */
+
+}
+
+.block_title {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px 50px 10px 50px; */
+    padding: 10px 50px 10px 50px;
+    border-bottom: 1px solid #000;
+}
+
+.img_meme {
+    height: 40%;
+    width: 40%;
+    align-self: center;
+    display: none;
+    /* appearance: none; */
+}
+
+.img5 {
+    width: 60%;
+}
+
+.block {
+    cursor: pointer;
+} 
+
+.block:hover .img_meme {
+    display: block;
+    /* appearance: auto; */
+}
+
+/* input:checked ~ .block .img_meme {
+    display: block;
+    appearance: auto;
+} */
+
+
+#block1:checked ~ .block:nth-of-type(1) .img_meme, 
+#block2:checked ~ .block:nth-of-type(2) .img_meme,
+#block3:checked ~ .block:nth-of-type(3) .img_meme,
+#block4:checked ~ .block:nth-of-type(4) .img_meme,
+#block5:checked ~ .block:nth-of-type(5) .img_meme {
+    display: block;
+    /* appearance: auto; */
+    /* opacity: 1; */
+  /* transition: all ease-in 1s; */
+}
+#block1:checked ~ .block:nth-of-type(1) 
+#block1:checked ~ .block:nth-of-type(2),
+#block1:checked ~ .block:nth-of-type(3),
+#block1:checked ~ .block:nth-of-type(4),
+#block1:checked ~ .block:nth-of-type(5) {
+    display: block;
+    z-index: 1;
+    position: relative;
+    /* transform: none; */
+    /* transition: all ease-in 3s; */
+    /* opacity: 0;
+  transition: all 1s 0.2s; */
 }
