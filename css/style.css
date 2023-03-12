@@ -3,7 +3,7 @@ body {
 }
 
 
-.container {
+.main_container {
     margin: 0 auto;
     min-height: 925px;
     width: 1100px;
@@ -15,9 +15,13 @@ header {
     background-color: #9e6262;
 }
 
-.block {
-    min-width: 100%;
-    min-height: 200px;
-    border: 1px solid black;
+/* .block { */
+    /* min-width: 100%; */
+    /* min-height: 200px; */
+    /* border: 1px solid black; */
     /* display: flex; */
+/* } */
+
+input {
+    width: 100%;
 }
